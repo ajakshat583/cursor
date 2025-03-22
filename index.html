@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Health Bot Assistant</h1>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+        
+        <div class="input-container">
+            <textarea id="symptoms-input" placeholder="Enter your symptoms here..."></textarea>
+            <button id="submit-btn">Get Diagnosis</button>
+        </div>
+        
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+            <p>Analyzing symptoms...</p>
+        </div>
+        
+        <div class="result-container" id="result-container">
+            <div class="result-header">
+                <h2>Analysis Results</h2>
+            </div>
+            <div class="result-content" id="result-content">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Note: This is an AI-powered assistant and not a replacement for professional medical advice.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
